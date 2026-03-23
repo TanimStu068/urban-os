@@ -12,11 +12,7 @@
 
 ## 🎥 Demo Video
 
-<p align="center">
-  <a href="https://drive.google.com/file/d/1j3dqfpciImDbg1GguYuvS5oRaL4lzaIW/preview" target="_blank">
-    <img src="assets/screenshots/demo_button.png" width="200" />
-  </a>
-</p>
+[▶️ Watch Demo Video on Google Drive](https://drive.google.com/file/d/1j3dqfpciImDbg1GguYuvS5oRaL4lzaIW/view)
 
 ## 🚀 Tech Stack & Status
 
