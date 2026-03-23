@@ -1,0 +1,60 @@
+import 'package:flutter/material.dart';
+import 'package:urban_os/core/themes/app_theme.dart';
+
+typedef C = AppColors;
+
+class AiRecommendRow extends StatelessWidget {
+  final String text, tag;
+  final IconData icon;
+  final Color color;
+  const AiRecommendRow(this.text, this.icon, this.color, this.tag, {super.key});
+
+  @override
+  Widget build(BuildContext ctx) => Padding(
+    padding: const EdgeInsets.only(bottom: 9),
+    child: Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Container(
+          width: 26,
+          height: 26,
+          margin: const EdgeInsets.only(right: 10, top: 1),
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: color.withOpacity(0.1),
+            border: Border.all(color: color.withOpacity(0.3)),
+          ),
+          child: Icon(icon, color: color, size: 11),
+        ),
+        Expanded(
+          child: Text(
+            text,
+            style: const TextStyle(
+              fontFamily: 'monospace',
+              fontSize: 8.5,
+              color: C.mutedLt,
+              height: 1.5,
+            ),
+          ),
+        ),
+        const SizedBox(width: 7),
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(3),
+            color: color.withOpacity(0.08),
+            border: Border.all(color: color.withOpacity(0.25)),
+          ),
+          child: Text(
+            tag,
+            style: TextStyle(
+              fontFamily: 'monospace',
+              fontSize: 6.5,
+              color: color,
+            ),
+          ),
+        ),
+      ],
+    ),
+  );
+}

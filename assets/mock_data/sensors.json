@@ -1,0 +1,211 @@
+[
+  {
+    "id": "sensor_001",
+    "name": "Main Street Traffic Flow",
+    "type": "trafficFlow",
+    "state": "online",
+    "districtId": "district_1",
+    "zoneId": "zone_a",
+    "latitude": 22.3569,
+    "longitude": 91.7832,
+    "location": "Main Street Intersection",
+    "latestReading": {
+      "value": 420,
+      "unit": "vehicles/hr",
+      "timestamp": "2026-03-08T09:30:00Z"
+    },
+    "installedDate": "2025-01-10T10:00:00Z",
+    "lastMaintenanceDate": "2025-12-01T10:00:00Z",
+    "batteryPercentage": 87,
+    "signalStrength": -52
+  },
+
+  {
+    "id": "sensor_002",
+    "name": "Highway Congestion Monitor",
+    "type": "congestionLevel",
+    "state": "online",
+    "districtId": "district_1",
+    "zoneId": "zone_b",
+    "latitude": 22.3601,
+    "longitude": 91.7901,
+    "location": "Highway Entrance",
+    "latestReading": {
+      "value": 65,
+      "unit": "%",
+      "timestamp": "2026-03-08T09:30:00Z"
+    },
+    "installedDate": "2024-06-01T10:00:00Z",
+    "lastMaintenanceDate": "2025-11-12T10:00:00Z",
+    "batteryPercentage": 70,
+    "signalStrength": -60
+  },
+
+  {
+    "id": "sensor_003",
+    "name": "Solar Grid Generator",
+    "type": "energyGeneration",
+    "state": "online",
+    "districtId": "district_2",
+    "zoneId": "zone_c",
+    "latitude": 22.3555,
+    "longitude": 91.7854,
+    "location": "Solar Power Station",
+    "latestReading": {
+      "value": 1200,
+      "unit": "kWh",
+      "timestamp": "2026-03-08T09:25:00Z"
+    },
+    "installedDate": "2024-02-10T10:00:00Z",
+    "lastMaintenanceDate": "2025-10-02T10:00:00Z",
+    "batteryPercentage": 100,
+    "signalStrength": -45
+  },
+
+  {
+    "id": "sensor_004",
+    "name": "Central Temperature Sensor",
+    "type": "temperature",
+    "state": "online",
+    "districtId": "district_3",
+    "zoneId": "zone_d",
+    "latitude": 22.3590,
+    "longitude": 91.7821,
+    "location": "City Center Park",
+    "latestReading": {
+      "value": 31.5,
+      "unit": "°C",
+      "timestamp": "2026-03-08T09:20:00Z"
+    },
+    "installedDate": "2024-03-12T10:00:00Z",
+    "lastMaintenanceDate": "2025-08-12T10:00:00Z",
+    "batteryPercentage": 76,
+    "signalStrength": -48
+  },
+
+  {
+    "id": "sensor_005",
+    "name": "City Air Quality Monitor",
+    "type": "airQuality",
+    "state": "online",
+    "districtId": "district_3",
+    "zoneId": "zone_e",
+    "latitude": 22.3622,
+    "longitude": 91.7810,
+    "location": "Urban Park",
+    "latestReading": {
+      "value": 82,
+      "unit": "AQI",
+      "timestamp": "2026-03-08T09:22:00Z"
+    },
+    "installedDate": "2023-11-01T10:00:00Z",
+    "lastMaintenanceDate": "2025-09-10T10:00:00Z",
+    "batteryPercentage": 63,
+    "signalStrength": -55
+  },
+
+  {
+    "id": "sensor_006",
+    "name": "River Water Level Monitor",
+    "type": "waterLevel",
+    "state": "online",
+    "districtId": "district_4",
+    "zoneId": "zone_f",
+    "latitude": 22.3502,
+    "longitude": 91.7920,
+    "location": "Karnaphuli River Bridge",
+    "latestReading": {
+      "value": 4.3,
+      "unit": "m",
+      "timestamp": "2026-03-08T09:28:00Z"
+    },
+    "installedDate": "2023-09-10T10:00:00Z",
+    "lastMaintenanceDate": "2025-07-05T10:00:00Z",
+    "batteryPercentage": 58,
+    "signalStrength": -50
+  },
+
+  {
+    "id": "sensor_007",
+    "name": "Industrial Smoke Detector",
+    "type": "smokeDetector",
+    "state": "online",
+    "districtId": "district_5",
+    "zoneId": "zone_g",
+    "latitude": 22.3470,
+    "longitude": 91.7888,
+    "location": "Factory Area",
+    "latestReading": {
+      "value": false,
+      "unit": "boolean",
+      "timestamp": "2026-03-08T09:29:00Z"
+    },
+    "installedDate": "2025-01-01T10:00:00Z",
+    "lastMaintenanceDate": "2025-12-10T10:00:00Z",
+    "batteryPercentage": 92,
+    "signalStrength": -41
+  },
+
+  {
+    "id": "sensor_008",
+    "name": "Public Motion Detector",
+    "type": "motionDetector",
+    "state": "online",
+    "districtId": "district_6",
+    "zoneId": "zone_h",
+    "latitude": 22.3640,
+    "longitude": 91.7800,
+    "location": "Public Square",
+    "latestReading": {
+      "value": true,
+      "unit": "boolean",
+      "timestamp": "2026-03-08T09:31:00Z"
+    },
+    "installedDate": "2025-02-15T10:00:00Z",
+    "lastMaintenanceDate": "2025-12-20T10:00:00Z",
+    "batteryPercentage": 66,
+    "signalStrength": -47
+  },
+
+  {
+    "id": "sensor_009",
+    "name": "CO2 Level Monitor",
+    "type": "co2Level",
+    "state": "online",
+    "districtId": "district_3",
+    "zoneId": "zone_i",
+    "latitude": 22.3521,
+    "longitude": 91.7838,
+    "location": "City Mall",
+    "latestReading": {
+      "value": 520,
+      "unit": "ppm",
+      "timestamp": "2026-03-08T09:24:00Z"
+    },
+    "installedDate": "2024-04-01T10:00:00Z",
+    "lastMaintenanceDate": "2025-08-05T10:00:00Z",
+    "batteryPercentage": 74,
+    "signalStrength": -49
+  },
+
+  {
+    "id": "sensor_010",
+    "name": "Noise Level Monitor",
+    "type": "noiseLevel",
+    "state": "online",
+    "districtId": "district_2",
+    "zoneId": "zone_j",
+    "latitude": 22.3615,
+    "longitude": 91.7870,
+    "location": "Bus Terminal",
+    "latestReading": {
+      "value": 78,
+      "unit": "dB",
+      "timestamp": "2026-03-08T09:26:00Z"
+    },
+    "installedDate": "2024-07-01T10:00:00Z",
+    "lastMaintenanceDate": "2025-09-01T10:00:00Z",
+    "batteryPercentage": 60,
+    "signalStrength": -54
+  }
+]

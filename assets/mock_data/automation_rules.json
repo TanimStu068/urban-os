@@ -1,0 +1,262 @@
+[
+  {
+    "id": "AR-001",
+    "name": "High AQI Alert",
+    "description": "Activates air filters and sends notification when AQI > 150",
+    "conditions": [
+      {
+        "sensorId": "S-AQI-01",
+        "operator": "greaterThan",
+        "threshold": 150,
+        "maxThreshold": null,
+        "description": "AQI above 150",
+        "isRequired": true,
+        "evaluationWindow": 300
+      }
+    ],
+    "actions": [
+      {
+        "id": "ACT-001",
+        "type": "setActuatorState",
+        "actuatorId": "FILT-01",
+        "targetState": "on",
+        "targetValue": null,
+        "duration": 3600,
+        "delay": 0,
+        "notificationMessage": null,
+        "notificationSeverity": null,
+        "eventDescription": null,
+        "webhookUrl": null,
+        "webhookPayload": null,
+        "triggerRuleId": null,
+        "description": "Turn on air filter",
+        "isEnabled": true
+      },
+      {
+        "id": "NOTIF-001",
+        "type": "sendNotification",
+        "actuatorId": null,
+        "targetState": null,
+        "targetValue": null,
+        "duration": null,
+        "delay": null,
+        "notificationMessage": "AQI is above safe limits!",
+        "notificationSeverity": "alert",
+        "eventDescription": null,
+        "webhookUrl": null,
+        "webhookPayload": null,
+        "triggerRuleId": null,
+        "description": "Send district alert",
+        "isEnabled": true
+      }
+    ],
+    "priority": "critical",
+    "isEnabled": true,
+    "conditionLogic": "AND",
+    "category": "environment",
+    "createdDate": "2026-03-08T10:00:00Z",
+    "modifiedDate": "2026-03-08T10:00:00Z",
+    "createdBy": "user-001",
+    "triggerCount": 5,
+    "lastTriggeredDate": "2026-03-08T12:00:00Z",
+    "cooldownPeriod": 1800,
+    "timeWindow": {
+      "startHour": 0,
+      "endHour": 23,
+      "activeDays": [0,1,2,3,4,5,6]
+    },
+    "dependentRuleIds": null
+  },
+  {
+    "id": "AR-002",
+    "name": "Traffic Congestion Light Control",
+    "description": "Adjust traffic light cycle if congestion exceeds 70%",
+    "conditions": [
+      {
+        "sensorId": "S-TRAFFIC-01",
+        "operator": "greaterThan",
+        "threshold": 70,
+        "maxThreshold": null,
+        "description": "Traffic density above 70%",
+        "isRequired": true,
+        "evaluationWindow": 60
+      }
+    ],
+    "actions": [
+      {
+        "id": "ACT-002",
+        "type": "setActuatorValue",
+        "actuatorId": "TL-01",
+        "targetState": null,
+        "targetValue": 90,
+        "duration": 300,
+        "delay": 0,
+        "notificationMessage": null,
+        "notificationSeverity": null,
+        "eventDescription": null,
+        "webhookUrl": null,
+        "webhookPayload": null,
+        "triggerRuleId": null,
+        "description": "Increase green light duration",
+        "isEnabled": true
+      }
+    ],
+    "priority": "high",
+    "isEnabled": true,
+    "conditionLogic": "AND",
+    "category": "traffic",
+    "createdDate": "2026-03-08T09:00:00Z",
+    "modifiedDate": "2026-03-08T09:00:00Z",
+    "createdBy": "user-002",
+    "triggerCount": 3,
+    "lastTriggeredDate": "2026-03-08T11:00:00Z",
+    "cooldownPeriod": 300,
+    "timeWindow": null,
+    "dependentRuleIds": null
+  },
+  {
+    "id": "AR-003",
+    "name": "Water Pump Automation",
+    "description": "Turn on water pump when reservoir level below 20%",
+    "conditions": [
+      {
+        "sensorId": "S-WATER-01",
+        "operator": "lessThan",
+        "threshold": 20,
+        "maxThreshold": null,
+        "description": "Reservoir level low",
+        "isRequired": true,
+        "evaluationWindow": 60
+      }
+    ],
+    "actions": [
+      {
+        "id": "ACT-003",
+        "type": "setActuatorState",
+        "actuatorId": "PUMP-01",
+        "targetState": "on",
+        "targetValue": null,
+        "duration": 1800,
+        "delay": 0,
+        "notificationMessage": null,
+        "notificationSeverity": null,
+        "eventDescription": null,
+        "webhookUrl": null,
+        "webhookPayload": null,
+        "triggerRuleId": null,
+        "description": "Start water pump",
+        "isEnabled": true
+      }
+    ],
+    "priority": "medium",
+    "isEnabled": true,
+    "conditionLogic": "AND",
+    "category": "water",
+    "createdDate": "2026-03-08T08:00:00Z",
+    "modifiedDate": "2026-03-08T08:00:00Z",
+    "createdBy": "user-003",
+    "triggerCount": 10,
+    "lastTriggeredDate": "2026-03-08T10:30:00Z",
+    "cooldownPeriod": 900,
+    "timeWindow": null,
+    "dependentRuleIds": null
+  },
+  {
+    "id": "AR-004",
+    "name": "Energy Saving Mode",
+    "description": "Dim lights when no motion detected for 15 minutes",
+    "conditions": [
+      {
+        "sensorId": "S-MOTION-01",
+        "operator": "equalTo",
+        "threshold": 0,
+        "maxThreshold": null,
+        "description": "No motion detected",
+        "isRequired": true,
+        "evaluationWindow": 900
+      }
+    ],
+    "actions": [
+      {
+        "id": "ACT-004",
+        "type": "setActuatorValue",
+        "actuatorId": "LIGHTS-01",
+        "targetState": null,
+        "targetValue": 20,
+        "duration": 3600,
+        "delay": 0,
+        "notificationMessage": null,
+        "notificationSeverity": null,
+        "eventDescription": null,
+        "webhookUrl": null,
+        "webhookPayload": null,
+        "triggerRuleId": null,
+        "description": "Dim lights to 20%",
+        "isEnabled": true
+      }
+    ],
+    "priority": "low",
+    "isEnabled": true,
+    "conditionLogic": "AND",
+    "category": "energy",
+    "createdDate": "2026-03-08T07:30:00Z",
+    "modifiedDate": "2026-03-08T07:30:00Z",
+    "createdBy": "user-004",
+    "triggerCount": 8,
+    "lastTriggeredDate": "2026-03-08T09:00:00Z",
+    "cooldownPeriod": 600,
+    "timeWindow": null,
+    "dependentRuleIds": null
+  },
+  {
+    "id": "AR-005",
+    "name": "Environment Noise Alert",
+    "description": "Send notification if noise > 85 dB during working hours",
+    "conditions": [
+      {
+        "sensorId": "S-NOISE-01",
+        "operator": "greaterThan",
+        "threshold": 85,
+        "maxThreshold": null,
+        "description": "Noise above safe level",
+        "isRequired": true,
+        "evaluationWindow": 60
+      }
+    ],
+    "actions": [
+      {
+        "id": "NOTIF-002",
+        "type": "sendNotification",
+        "actuatorId": null,
+        "targetState": null,
+        "targetValue": null,
+        "duration": null,
+        "delay": null,
+        "notificationMessage": "Noise level above 85 dB!",
+        "notificationSeverity": "warning",
+        "eventDescription": null,
+        "webhookUrl": null,
+        "webhookPayload": null,
+        "triggerRuleId": null,
+        "description": "Send noise alert",
+        "isEnabled": true
+      }
+    ],
+    "priority": "medium",
+    "isEnabled": true,
+    "conditionLogic": "AND",
+    "category": "environment",
+    "createdDate": "2026-03-08T07:00:00Z",
+    "modifiedDate": "2026-03-08T07:00:00Z",
+    "createdBy": "user-005",
+    "triggerCount": 2,
+    "lastTriggeredDate": "2026-03-08T08:00:00Z",
+    "cooldownPeriod": 600,
+    "timeWindow": {
+      "startHour": 9,
+      "endHour": 17,
+      "activeDays": [0,1,2,3,4]
+    },
+    "dependentRuleIds": null
+  }
+]

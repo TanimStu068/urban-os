@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "602461172829",
+    "project_id": "urban-os-41ed5",
+    "storage_bucket": "urban-os-41ed5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602461172829:android:147f5dd14d4660068ac9b4",
+        "android_client_info": {
+          "package_name": "com.example.urban_os"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjAzgQmWvDJbXolu86x1rrs9h5XVK2wWo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
