@@ -13,7 +13,9 @@
 ## 🎥 Demo Video
 
 <p align="center">
-  <iframe src="https://drive.google.com/file/d/1j3dqfpciImDbg1GguYuvS5oRaL4lzaIW/preview" width="70%" height="400" allow="autoplay"></iframe>
+  <a href="https://drive.google.com/file/d/1j3dqfpciImDbg1GguYuvS5oRaL4lzaIW/preview" target="_blank">
+    <img src="assets/screenshots/demo_button.png" width="200" />
+  </a>
 </p>
 
 ## 🚀 Tech Stack & Status
