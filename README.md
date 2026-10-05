@@ -167,38 +167,47 @@ PRIORITY <level>
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="urbanos_image1.png" width="30%" />
-  <img src="urbanos_image2.png" width="30%" />
-  <img src="urbanos_image3.png" width="30%" />
+  <img src="urbanos_image1.png" width="48%" />
+  <img src="urbanos_image2.png" width="48%" />
 </p>
 
 <p align="center">
-  <img src="urbanos_image4.png" width="30%" />
-  <img src="urbanos_image5.png" width="30%" />
-  <img src="urbanos_image6.png" width="30%" />
+  <img src="urbanos_image3.png" width="48%" />
+  <img src="urbanos_image4.png" width="48%" />
 </p>
 
 <p align="center">
-  <img src="urbanos_image7.png" width="30%" />
-  <img src="urbanos_image8.png" width="30%" />
-  <img src="urbanos_image9.png" width="30%" />
+  <img src="urbanos_image5.png" width="48%" />
+  <img src="urbanos_image6.png" width="48%" />
 </p>
 
 <p align="center">
-  <img src="urbanos_image10.png" width="30%" />
-  <img src="urbanos_image11.png" width="30%" />
-  <img src="urbanos_image12.png" width="30%" />
+  <img src="urbanos_image7.png" width="48%" />
+  <img src="urbanos_image8.png" width="48%" />
 </p>
 
 <p align="center">
-  <img src="urbanos_image13.png" width="30%" />
-  <img src="urbanos_image14.png" width="30%" />
-  <img src="urbanos_image15.png" width="30%" />
+  <img src="urbanos_image9.png" width="48%" />
+  <img src="urbanos_image10.png" width="48%" />
 </p>
 
 <p align="center">
-  <img src="urbanos_image16.png" width="30%" />
-  <img src="urbanos_image17.png" width="30%" />
+  <img src="urbanos_image11.png" width="48%" />
+  <img src="urbanos_image12.png" width="48%" />
+</p>
+
+<p align="center">
+  <img src="urbanos_image13.png" width="48%" />
+  <img src="urbanos_image14.png" width="48%" />
+</p>
+
+<p align="center">
+  <img src="urbanos_image15.png" width="48%" />
+  <img src="urbanos_image16.png" width="48%" />
+</p>
+
+<p align="center">
+  <img src="urbanos_image17.png" width="48%" />
 </p>
 
 ---
