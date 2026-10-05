@@ -272,15 +272,6 @@ lib/
 
 ---
 
-## 🚀 Getting Started
-
-```bash
-git clone https://github.com/TanimStu068/urban-os.git
-cd urban-os
-flutter pub get
-flutter run
-```
-
 ---
 
 ## 🔮 Future Enhancements
